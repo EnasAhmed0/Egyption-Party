@@ -32,20 +32,19 @@
         <h1>ُ Egyption Party</h1>
         <p>Let's have Fun</p>
       </div>
-        <span class="tab" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      <span class="tab" style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        >&#9776; open</span
+      >
     </div>
 
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#Home">Home</a>
+      <a href="#sliderDown">Duration</a>
+      <a href="#count">Details</a>
+      <a href="#contact-us">Contact</a>
+    </div>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-   <a href="#Home">Home</a>
-        <a href="#sliderDown">Duration</a>
-        <a href="#count">Details</a>
-        <a href="#contact-us">Contact</a> 
-</div>
-
-
-  
     <!-- with mdboostrap -->
     <section
       id="sliderDown"
@@ -219,135 +218,145 @@
       </div>
     </section>
 
+    <div class="coutact-us py-5">
+      <div class="container py-5">
+        <h1 class="ms-5">JOIN US</h1>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="CONTACT-INFO container py-5">
+              <h3>CONTACT INFO</h3>
+              <p class="text-center INFO">
+                Why you should hire me writeup Lorem ipsum dolor sit amet, consectetuer adipiscing
+                elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque nascetur
+                ridiculus mus.
+              </p>
+              <!-- Pills content -->
+              <div class="icons text-center">
+                <p>
+                  <i class="fa fa-map-marker mt-4"></i> New Street 22545, Nexa Road, New York City,
+                  USA
+                </p>
 
+                <p style="color: #d62e33"><i class="fa fa-envelope mt-4"></i> hello@uigrid.com</p>
+                <p><i class="fa fa-phone mt-4"></i> 001-000-000-000</p>
+              </div>
+              <div class="tab-content">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-login"
+                  role="tabpanel"
+                  aria-labelledby="tab-login"
+                >
+                  <div class="text-center mb-3">
+                    <a
+                      class="btn text-white"
+                      data-mdb-ripple-init
+                      style="background-color: #3b5998"
+                      href="#!"
+                      role="button"
+                    >
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
 
-<div class="coutact-us py-5">
-  <div class="container py-5">
-    <h1 class="ms-5">JOIN US</h1>
-      <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-    <div class="row">
-      <div class="col-md-6 col-sm-12 ">
-          <div class="CONTACT-INFO container py-5 ">
-          <h3>CONTACT INFO</h3>
-          <p class="text-center INFO">
-            Why you should hire me writeup Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque nascetur ridiculus
-            mus.
-          </p>
-          <!-- Pills content -->
-          <div class="icons text-center">
-            <p>
-              <i class="fa fa-map-marker mt-4"></i> New Street 22545, Nexa Road, New York City, USA
-            </p>
+                    <!-- Twitter -->
+                    <a
+                      class="btn text-white"
+                      data-mdb-ripple-init
+                      style="background-color: #55acee"
+                      href="#!"
+                      role="button"
+                    >
+                      <i class="fab fa-twitter"></i>
+                    </a>
 
-            <p style="color: #d62e33"><i class="fa fa-envelope mt-4"></i> hello@uigrid.com</p>
-            <p><i class="fa fa-phone mt-4"></i> 001-000-000-000</p>
+                    <!-- Google -->
+                    <a
+                      class="btn text-white"
+                      data-mdb-ripple-init
+                      style="background-color: #dd4b39"
+                      href="#!"
+                      role="button"
+                    >
+                      <i class="fab fa-google"></i>
+                    </a>
+                    <!-- Linkedin -->
+                    <a
+                      class="btn text-white"
+                      data-mdb-ripple-init
+                      style="background-color: #0082ca"
+                      href="#!"
+                      role="button"
+                    >
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="tab-content">
-            <div
-              class="tab-pane fade show active"
-              id="pills-login"
-              role="tabpanel"
-              aria-labelledby="tab-login"
-            >
-              <div class="text-center mb-3">
-                <a
-                  class="btn text-white"
-                  data-mdb-ripple-init
-                  style="background-color: #3b5998"
-                  href="#!"
-                  role="button"
-                >
-                  <i class="fab fa-facebook-f"></i>
-                </a>
+          <div class="col-md-6 col-sm-12 text-center">
+            <div class="join-us" id="contact-us">
+              <div class="container text-center py-5">
+                <form class="row g-3 my-4" id="login">
+                  <div class="col-12">
+                    <div class="form-data">
+                      <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="email" id="email" class="form-control" />
+                        <label class="form-label" for="email">Email address</label>
+                      </div>
 
-                <!-- Twitter -->
-                <a
-                  class="btn text-white"
-                  data-mdb-ripple-init
-                  style="background-color: #55acee"
-                  href="#!"
-                  role="button"
-                >
-                  <i class="fab fa-twitter"></i>
-                </a>
+                      <ul class="alert alert-danger p-0 invalid-feedback">
+                        <li>Email Is Required</li>
+                        <li>InValid Email Formate</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-data">
+                      <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="password" id="password" class="form-control" />
+                        <label class="form-label" for="password">Password</label>
+                      </div>
 
-                <!-- Google -->
-                <a
-                  class="btn text-white"
-                  data-mdb-ripple-init
-                  style="background-color: #dd4b39"
-                  href="#!"
-                  role="button"
-                >
-                  <i class="fab fa-google"></i>
-                </a>
-                <!-- Linkedin -->
-                <a
-                  class="btn text-white"
-                  data-mdb-ripple-init
-                  style="background-color: #0082ca"
-                  href="#!"
-                  role="button"
-                >
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
+                      <ul class="alert alert-danger p-0 invalid-feedback">
+                        <li>Password Is Required</li>
+                        <li>Minimum eight characters, at least one letter and one number</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Message input -->
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <textarea id="message" class="form-control" rows="5" maxlength="100"></textarea>
+                    <label class="form-label" for="form4Example3">Message</label>
+                  </div>
+                  <p>Characters remaining: <span style="color: brown" id="charCount">100</span></p>
+                  <!-- Checkbox -->
+                  <div class="form-check d-flex justify-content-center mb-4">
+                    <input
+                      class="form-check-input me-2"
+                      type="checkbox"
+                      value=""
+                      id="form4Example4"
+                      checked
+                    />
+                    <label class="form-check-label" for="form4Example4">
+                      Send me a copy of this message
+                    </label>
+                  </div>
+
+                  <!-- Submit button -->
+                  <button data-mdb-ripple-init type="button" class="btn red btn-block mb-4">
+                    SEND MESSAGE
+                  </button>
+                </form>
               </div>
             </div>
           </div>
         </div>
-
-      </div>
-      <div class="col-md-6 col-sm-12 text-center">
-  <div class="join-us " id="contact-us">
-          <div class="container text-center py-5">
-            <form style="width: 600px">
-              <!-- Name input -->
-              <div data-mdb-input-init class="form-outline mb-4">
-                <input type="text" id="form4Example1" class="form-control" />
-                <label class="form-label" for="form4Example1">Name</label>
-              </div>
-
-              <!-- Email input -->
-              <div data-mdb-input-init class="form-outline mb-4">
-                <input type="email" id="form4Example2" class="form-control" />
-                <label class="form-label" for="form4Example2">Email address</label>
-              </div>
-
-              <!-- Message input -->
-              <div data-mdb-input-init class="form-outline mb-4">
-                <textarea id="message" class="form-control" rows="5" maxlength="100"></textarea>
-                <label class="form-label" for="form4Example3">Message</label>
-              </div>
-              <p>Characters remaining: <span style="color: brown" id="charCount">100</span></p>
-              <!-- Checkbox -->
-              <div class="form-check d-flex justify-content-center mb-4">
-                <input
-                  class="form-check-input me-2"
-                  type="checkbox"
-                  value=""
-                  id="form4Example4"
-                  checked
-                />
-                <label class="form-check-label" for="form4Example4">
-                  Send me a copy of this message
-                </label>
-              </div>
-
-              <!-- Submit button -->
-              <button data-mdb-ripple-init type="button" class="btn red btn-block mb-4">
-                SEND MESSAGE
-              </button>
-            </form>
-          </div>
-        </div>
       </div>
     </div>
-  </div>
-</div>
 
-   
-    
     <script src="js/jquery-3.7.1.min.js"></script>
     <!-- MDB -->
     <script
