@@ -327,28 +327,15 @@
                   </div>
                   <!-- Message input -->
                   <div data-mdb-input-init class="form-outline mb-4">
-                    <textarea id="message" class="form-control" rows="5" maxlength="100"></textarea>
+                    <textarea id="message" class="form-control" rows="4" maxlength="100"></textarea>
                     <label class="form-label" for="form4Example3">Message</label>
                   </div>
                   <p>Characters remaining: <span style="color: brown" id="charCount">100</span></p>
-                  <!-- Checkbox -->
-                  <div class="form-check d-flex justify-content-center mb-4">
-                    <input
-                      class="form-check-input me-2"
-                      type="checkbox"
-                      value=""
-                      id="form4Example4"
-                      checked
-                    />
-                    <label class="form-check-label" for="form4Example4">
-                      Send me a copy of this message
-                    </label>
-                  </div>
-
                   <!-- Submit button -->
-                  <button data-mdb-ripple-init type="button" class="btn red btn-block mb-4">
+                  <button type="submit" data-mdb-ripple-init type="button" id="btnLogin" class="btn red btn-block mb-4">
                     SEND MESSAGE
                   </button>
+                  <p id="msg" class="text-center"></p>
                 </form>
               </div>
             </div>
