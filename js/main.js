@@ -115,3 +115,40 @@ var x = setInterval(function() {
     document.getElementById('demo').innerHTML = 'EXPIRED';
   }
 }, 1000);
+
+function validationEmail() {
+  const regexStyle =
+    /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+
+  if (regexStyle.test(inputs[0].value)) {
+    // el tmam
+    inputs[0].classList.add('is-valid');
+    inputs[0].classList.remove('is-invalid');
+    return true;
+  } else {
+    //el mesh tmam
+
+    inputs[0].classList.add('is-invalid');
+    inputs[0].classList.remove('is-valid');
+
+    return false;
+  }
+}
+
+function validationPassword() {
+  const regexStyle = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+  if (regexStyle.test(inputs[1].value)) {
+    // el tmam
+    inputs[1].classList.add('is-valid');
+    inputs[1].classList.remove('is-invalid');
+    return true;
+  } else {
+    //el mesh tmam
+
+    inputs[1].classList.add('is-invalid');
+    inputs[1].classList.remove('is-valid');
+
+    return false;
+  }
+}
