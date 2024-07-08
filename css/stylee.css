@@ -1,0 +1,322 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+ 
+
+}
+body{
+   overflow: hidden;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #FFF #FFF transparent transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent transparent #FF3D00 #FF3D00;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+.loader::before {
+  width: 32px;
+  height: 32px;
+  border-color: #FFF #FFF transparent transparent;
+  animation: rotation 1.5s linear infinite;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+    
+.loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(14, 7, 7);
+z-index: 1200;
+}
+
+
+
+.sidenav a:hover {
+    color: #ae1010;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.openNav {
+ position: absolute;
+  top: 60%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1000;
+  color: #f6f6f6;
+
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fefcfc;
+  display: block;
+  transition: 0.3s;
+  line-height: 60px;
+}
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.tab{
+  position:relative;
+  left: 0%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-content {
+    width: 100%;
+    height:650px;
+    background-image: linear-gradient(to bottom , rgba(214, 46, 52, 0.593),    rgba(214, 46, 52, 0.593)),url("../images/events-heavenly-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    color: white;
+    position: relative;
+  }
+.overlay{
+  width: 100%;  
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1000;
+  color: #f6f6f6;
+}
+
+.home-content h1{
+  font-weight: 600px;
+  font-size: 63px;
+}
+
+/* .closebtn{
+     position: absolute; 
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+} */
+ 
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;}
+
+.accordion{
+  color: black;
+}
+
+.accordion-header h2 button{
+  color: black;
+}
+.nav-left {
+  background-color: black;
+  /* position: fixed; */
+  height: 100vh;
+  z-index: 100;
+}
+.nav-left a{
+  color: white;
+
+}
+.nav-left a:hover{
+  color: #dc3545;
+}
+.accordion-header button{
+  font-weight: 500px;
+  font-size: 30px;
+  color: #f6f6f6;
+  background-color: #d62e34b2;
+  size: bold;
+  width: 100%;
+}
+.accordion-body{
+  background-color: #9e9c9c9d;
+  color: black;
+}
+.accordion-borderless .accordion-item .accordion-button:not(.collapsed) {
+    background-color:  #d62e34b2;
+    color: white;
+    box-shadow: none;
+    width: 100%;
+}
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+    border-top-left-radius: var(--mdb-accordion-inner-border-radius);
+    border-top-right-radius: var(--mdb-accordion-inner-border-radius);
+    width: 800px;
+}
+.accordion-borderless .accordion-item .accordion-button {
+    border-radius: 1px;
+}
+#count{
+   background-image: url(../images/invitation-2508607__340.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    position: relative;
+    height: 330px;
+    overflow: hidden;
+}
+.countdown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    background-color: rgba(214, 46, 52, 0.593);
+    color: white;
+}
+.single-counter {
+    padding: 40px;
+    border: 1px solid white;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 110px;
+  }
+
+.icons i {
+    margin-right: 20px;
+    color: #777;
+  }
+
+
+ .CONTACT-INFO h3 {
+    color: #444;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+  }
+ .CONTACT-INFO h1 {
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+   
+    
+  }
+.join-us button{
+  background-color: #D62E33;
+  color: white; 
+}
+
+.INFO {
+  line-height: 30px;
+  font-size: 20px;
+   color: #777;
+}
+.CONTACT-INFO{
+  line-height: 45px;
+  color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* with jquary  */
+/* #panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+#panel {
+  padding: 50px;
+  display: none;
+} */
