@@ -302,8 +302,19 @@ a {
 
 
 
-
-
+footer{
+  background-color: rgb(14, 12, 12);
+}
+.footer-text{
+color: rgb(176, 36, 21);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer-icon a i{
+  color: rgb(176, 36, 21);
+}
+.footer-icon a i:hover{
+  color: rgb(6, 6, 6);
+}
 
 
 
